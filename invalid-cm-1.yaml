@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: invalid-cm-1
+  namespace: argocd-invalid-test
+  annotations:
+    argocd.argoproj.io/sync-options: Validate=true
+invalidKey: this-fails
+
